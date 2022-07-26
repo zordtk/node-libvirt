@@ -1,5 +1,5 @@
 {
-  "name": "node-libvirt",
+  "name": "@avaflow/libvirt",
   "version": "0.0.7",
   "description": "Libvirt bindings for Node.js®",
   "main": "dist/index.js",
