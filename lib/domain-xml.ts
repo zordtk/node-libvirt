@@ -90,6 +90,10 @@ export const domainDiskXml = {
             if (diskDesc.target.bus) disk.target.$.bus = diskDesc.target.bus;
         }
 
+        if( diskDesc.readonly ) {
+            disk.readonly = '';
+        }
+
         return disk;
     },
 

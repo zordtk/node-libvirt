@@ -36,10 +36,10 @@ export declare interface DomainOsDesc {
 export declare interface DomainDiskDesc {
 
     type?: "file";
-    device?: "disk";
+    device?: "disk"|"cdrom";
 
     driver?: {
-        name?: "qemu";
+        name?: "qemu"|"raw";
         type?: "qcow2";
     };
 
@@ -52,6 +52,7 @@ export declare interface DomainDiskDesc {
         bus?: "virtio";
     };
 
+    readonly?: boolean;
 }
 
 /**
